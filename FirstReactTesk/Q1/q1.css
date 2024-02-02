@@ -1,0 +1,58 @@
+﻿body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f2f2f2;
+}
+
+.container {
+    text-align: center;
+}
+
+input {
+    padding: 8px;
+    font-size: 16px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    margin: 5px;
+    cursor: pointer;
+}
+
+#btnStart {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+}
+
+#btnPlus:disabled,
+#btnGo:disabled {
+    background-color: #ccc;
+    color: #888;
+    cursor: not-allowed;
+}
+
+#btnPlus:not(:disabled):hover,
+#btnGo:not(:disabled):hover {
+    background-color: #008CBA;
+    color: white;
+}
+
+#btnGo:not(:disabled):active,
+#btnPlus:not(:disabled):active {
+    background-color: #004566;
+    color: white;
+}
+
+#btnGo,
+#btnPlus {
+    border: none;
+}
+
+#dynamic_p {
+    margin-top: 10px;
+}
